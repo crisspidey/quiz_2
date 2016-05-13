@@ -14,6 +14,17 @@ import java.util.ArrayList;
 public class UniversityStaff {
  
     private ArrayList<Employee> payroll;
-    
-    
+
+    public UniversityStaff(ArrayList<Employee> payroll) {
+        this.payroll = payroll;
+    }
+
+    public ArrayList<Employee> getPayroll() {
+        return payroll;
+    }
+
+    public void setPayroll(ArrayList<Employee> payroll) {
+        this.payroll = payroll;
+    }
+        
 }

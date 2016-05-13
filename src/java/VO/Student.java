@@ -15,7 +15,7 @@ public class Student extends Employee{
   
     private String department;
 
-    public Student(String department, Date hirigDate, String id, String name) {
+    public Student(String department, Date hirigDate, int id, String name) {
         super(hirigDate, id, name);
         this.department = department;
     }

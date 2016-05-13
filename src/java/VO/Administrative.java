@@ -16,7 +16,7 @@ public class Administrative extends Employee{
     private String category;
     
 
-    public Administrative(String category, float salary, Date hirigDate, String id, String name) {
+    public Administrative(String category, float salary, Date hirigDate, int id, String name) {
         super(hirigDate, id, name);
         this.category = category;
         

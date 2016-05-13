@@ -16,7 +16,7 @@ public class Grad extends Student{
     private int courses;
     private double salary;
 
-    public Grad(int courses, double salary, String department, Date hirigDate, String id, String name) {
+    public Grad(int courses, double salary, String department, Date hirigDate, int id, String name) {
         super(department, hirigDate, id, name);
         this.courses = courses;
         this.salary = salary;

@@ -15,7 +15,7 @@ public class FullTime extends Professor{
     
     private float salary;
 
-    public FullTime(float salary, String school, String department, Date hirigDate, String id, String name) {
+    public FullTime(float salary, String school, String department, Date hirigDate, int id, String name) {
         super(school, department, hirigDate, id, name);
         this.salary = salary;
     }

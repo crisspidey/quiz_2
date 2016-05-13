@@ -16,7 +16,7 @@ public class ByContract extends Employee{
     private int months;
     private float value;
 
-    public ByContract(int months, float value, Date hirigDate, String id, String name) {
+    public ByContract(int months, float value, Date hirigDate, int id, String name) {
         super(hirigDate, id, name);
         this.months = months;
         this.value = value;

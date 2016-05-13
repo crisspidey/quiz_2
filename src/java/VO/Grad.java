@@ -14,12 +14,14 @@ import java.sql.Date;
 public class Grad extends Student{
     
     private int courses;
+    private double salary;
 
-    public Grad(int courses, String department, Date hirigDate, String id, String name) {
+    public Grad(int courses, double salary, String department, Date hirigDate, String id, String name) {
         super(department, hirigDate, id, name);
         this.courses = courses;
+        this.salary = salary;
     }
-
+    
     public int getCourses() {
         return courses;
     }
@@ -27,4 +29,12 @@ public class Grad extends Student{
     public void setCourses(int courses) {
         this.courses = courses;
     }   
+    
+     public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 }

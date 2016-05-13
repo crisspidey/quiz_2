@@ -16,7 +16,7 @@ public class Professor extends Employee{
     private String school;
     private String department;
 
-    public Professor(String school, String department, Date hirigDate, String id, String name) {
+    public Professor(String school, String department, Date hirigDate, int id, String name) {
         super(hirigDate, id, name);
         this.school = school;
         this.department = department;

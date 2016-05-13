@@ -14,10 +14,20 @@ import java.sql.Date;
 public class Undergrad extends Student{
     
     private int weekHours;
+    private double salary;
 
-    public Undergrad(int weekHours, String department, Date hirigDate, String id, String name) {
+    public Undergrad(int weekHours, double salary, String department, Date hirigDate, int id, String name) {
         super(department, hirigDate, id, name);
         this.weekHours = weekHours;
+        this.salary = salary;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public int getWeekHours() {

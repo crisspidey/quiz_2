@@ -32,8 +32,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `mydb`.`Student` (
   `type` VARCHAR(45) NOT NULL,
   `department` VARCHAR(45) NOT NULL,
-  `courses` INT NOT NULL,
-  `weekHours` INT NOT NULL,
+  `courses` INT NULL,
+  `weekHours` INT NULL,
   `Employee_idEmployee` INT NOT NULL,
   INDEX `fk_Student_Employee1_idx` (`Employee_idEmployee` ASC),
   CONSTRAINT `fk_Student_Employee1`
@@ -51,9 +51,9 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Professor` (
   `type` VARCHAR(45) NOT NULL,
   `school` VARCHAR(45) NOT NULL,
   `department` VARCHAR(45) NOT NULL,
-  `salary` FLOAT NOT NULL,
-  `category` VARCHAR(45) NOT NULL,
-  `classHours` VARCHAR(45) NOT NULL,
+  `salary` FLOAT NULL,
+  `category` VARCHAR(45) NULL,
+  `classHours` VARCHAR(45) NULL,
   `Employee_idEmployee` INT NOT NULL,
   INDEX `fk_Professor_Employee_idx` (`Employee_idEmployee` ASC),
   CONSTRAINT `fk_Professor_Employee`

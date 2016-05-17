@@ -27,7 +27,6 @@ public class StudentDAO implements IStudent<Student>{
                 if(estudiantes==null){
                     estudiantes = new ArrayList<Student>();
                 }
-                if(Stu)
                 id = rs.getInt("id");
                 department = rs.getString("department");
                 hirigDate = rs.getDate("hirigDate");

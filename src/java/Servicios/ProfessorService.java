@@ -5,7 +5,7 @@
  */
 package Servicios;
 
-import DAO.ProfessorDao;
+import DAO.ProfessorDAO;
 import VO.Professor;
 import java.util.List;
 
@@ -14,10 +14,10 @@ import java.util.List;
  * @author Andres Felipe Bernal
  */
 public class ProfessorService {
-  private ProfessorDao dao = null;
+  private ProfessorDAO dao = null;
     
-    public ProfessorService(ProfessorDao dao ){
-      this.dao = dao;
+    public ProfessorService(){
+      this.dao = new ProfessorDAO();
     }
     
     public List<Professor> findAll() {

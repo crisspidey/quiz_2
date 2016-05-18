@@ -38,7 +38,7 @@
                             <h3 class="panel-title">Crear Docente</h3>
                         </div>
                         <div class="panel-body">
-                            <form role="form" method="post" action="EmpleadoControlador">
+                            <form role="form" method="post" action="ControladorDocente">
                                                 <input type="hidden" name="action" value="crearDocente" />
                                                 <div class="form-group">
                                                     <label>ID: </label>
@@ -50,7 +50,7 @@
                                                 </div>                                              
                                                 <div class="form-group">
                                                     <label>hiringDate: </label>
-                                                    <input name="txtDateD" class="form-control">                                                    
+                                                    <input name="txtDateD" placeholder="dd/mm/aaaa" class="form-control">                                                    
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Department: </label>
@@ -62,7 +62,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label>FullTime - PartialTime </label>
-                                                    <input name="txtTimeD" class="form-control">                                                    
+                                                    <input name="txtTimeD" placeholder="FullTime o PartialTime" class="form-control">                                                    
                                                 </div>
                                                 
                                                 <button type="submit" class="btn btn-success">Crear</button>

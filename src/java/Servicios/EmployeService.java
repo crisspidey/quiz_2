@@ -6,6 +6,7 @@
 package Servicios;
 
 import DAO.PersonDAO;
+import VO.Employee;
 
 /**
  *
@@ -17,7 +18,7 @@ public class EmployeService {
     public EmployeService(PersonDAO dao) {
         this.dao = dao;
     }
-    public boolean SalarioTotal(Employe t){
+    public boolean SalarioTotal(Employee t){
       return this.dao.insert(t);
     } 
 }

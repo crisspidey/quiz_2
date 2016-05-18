@@ -21,7 +21,7 @@ public class Conexion {
             }
 
             try {
-                CONEXION = DriverManager.getConnection("jdbc:mysql://localhost:3306/RedSocial", "root", "");
+                CONEXION = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb2", "root", "");
 
             } catch (SQLException e) {
                 System.out.println("Connection Failed! Check output console");

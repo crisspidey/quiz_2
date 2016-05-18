@@ -6,7 +6,7 @@
 package Servicios;
 
 import DAO.IStudent;
-import DAO.ProfessorDao;
+import DAO.ProfessorDAO;
 import DAO.StudentDAO;
 import VO.Student;
 import java.util.List;

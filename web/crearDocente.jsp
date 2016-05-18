@@ -64,7 +64,10 @@
                                                     <label>FullTime - PartialTime </label>
                                                     <input name="txtTimeD" placeholder="FullTime o PartialTime" class="form-control">                                                    
                                                 </div>
-                                                
+                                                <div class="form-group">
+                                                    <label>Salario</label>
+                                                    <input name="txtSalarioD" placeholder="Salario" class="form-control">                                                    
+                                                </div>
                                                 <button type="submit" class="btn btn-success">Crear</button>
                                                 <button type="reset" class="btn btn-default">Limpiar</button>
                                                 

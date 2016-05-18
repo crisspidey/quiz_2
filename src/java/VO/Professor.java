@@ -15,11 +15,13 @@ public class Professor extends Employee{
     
     private String school;
     private String department;
+    private float salary;
 
-    public Professor(String school, String department, Date hirigDate, int id, String name) {
+    public Professor(float salary, String school, String department, Date hirigDate, int id, String name) {
         super(hirigDate, id, name);
         this.school = school;
         this.department = department;
+        this.salary = salary;
     }
 
     public String getSchool() {
@@ -36,6 +38,14 @@ public class Professor extends Employee{
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
     }
 
     @Override

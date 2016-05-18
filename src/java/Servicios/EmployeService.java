@@ -15,8 +15,8 @@ import VO.Employee;
 public class EmployeService {
     private PersonDAO dao;
 
-    public EmployeService(PersonDAO dao) {
-        this.dao = dao;
+    public EmployeService() {
+        this.dao = new PersonDAO();
     }
     public boolean SalarioTotal(Employee t){
       return this.dao.insert(t);

@@ -5,7 +5,12 @@
  */
 package Controlador;
 
+import Servicios.EmployeService;
+import Servicios.PersonService;
 import Servicios.ProfessorService;
+import VO.FullTime;
+import VO.PartialTime;
+import VO.Person;
 import VO.Professor;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -75,16 +80,22 @@ public class ControladorDocente extends HttpServlet {
             throws ServletException, IOException {
         
         int     idDoc        = Integer.parseInt(request.getParameter("txtIDD"));
-        String  nameDoc      = request.getParameter("txtIDD");
+        String  nameDoc      = request.getParameter("txtNameD");
         String  dateHirinDoc = request.getParameter("txtDateD");
         String  depDoc       = request.getParameter("txtDepartmentD");
         String  schoDoc      = request.getParameter("txtSchoolD");
         String  timeDoc      = request.getParameter("txtTimeD");
-        Date hd = new Date(1);   
-        Professor profe = new Professor(schoDoc,depDoc, hd,idDoc,nameDoc);
+        int     salario        = Integer.parseInt(request.getParameter("txtSalarioD"));
+        Date hd = new Date(1);           
+       
+        Professor profe = new Professor(salario,schoDoc,depDoc, hd,idDoc,nameDoc);
         ProfessorService profeServicio = new ProfessorService();
+        PersonService profeservice2 = new PersonService();
+        //profeservice2.insert(new Person(profe.getId(),profe.getName()));
+        //profeservice2.insert(profe);
         profeServicio.insert(profe);
-        response.sendRedirect("index.jsp?mensaje = Docente insertado OK");
+        
+        response.sendRedirect("index.jsp?mensaje = Docente insertado OK");        
     }
 
     /**

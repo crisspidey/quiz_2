@@ -15,13 +15,12 @@ public class PartialTime extends Professor{
 
     private String category;
     private int classHours;
-    private double salary;
+    
 
-    public PartialTime(String category, int classHours, double salary, String school, String department, Date hirigDate, int id, String name) {
-        super(school, department, hirigDate, id, name);
+    public PartialTime(float salary, String category, int classHours, String school, String department, Date hirigDate, int id, String name) {
+        super(salary,school, department, hirigDate, id, name);
         this.category = category;
         this.classHours = classHours;
-        this.salary = salary;
     }
 
     public String getCategory() {
@@ -38,14 +37,6 @@ public class PartialTime extends Professor{
 
     public void setClassHours(int classHours) {
         this.classHours = classHours;
-    }
-    
-     public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 }
 

@@ -11,6 +11,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,11 +51,15 @@ public class PersonDAO implements IStudent<Person>{
     public boolean insert(Person t) {
         boolean resultado=false;
         Connection conexion = Conexion.getConnection();
-        String query ="INSERT INTO Person (id, name)" + "VALUES(?,?)";
+        String query ="INSERT INTO Person (idEmployee, name, hiringDate,type)" + "VALUES(?,?,?,?)";
         PreparedStatement ps = null;
+        String a = "fulll";
         try {
+            ps=conexion.prepareStatement(query);
             ps.setInt(1, t.getId());
             ps.setString(2, t.getName());
+            ps.setDate(3, new Date(10203));
+            ps.setString(4, a);
             resultado = ps.execute();
         } catch (Exception e) {
             e.printStackTrace();
